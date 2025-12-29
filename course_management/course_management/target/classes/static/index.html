@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Course Management System</h1>
+
+<div class="form-box">
+    <input type="hidden" id="courseId">
+
+    <input type="text" id="courseName" placeholder="Course Name">
+    <input type="text" id="courseDuration" placeholder="Course Duration">
+    <input type="number" id="courseFee" placeholder="Course Fee">
+
+    <button onclick="addOrUpdateCourse()">Save Course</button>
+</div>
+
+<h2>All Courses</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Duration</th>
+        <th>Fee</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="courseTable">
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
